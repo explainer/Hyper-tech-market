@@ -1,14 +1,14 @@
 First, a review. From Wikipedia:
 
-Model–view–controller (MVC) is a software architectural pattern for implementing user interfaces on computers. It divides a given application into three interconnected parts. This is done to separate internal representations of information from the ways information is presented to, and accepted from, the user. The MVC design pattern decouples these major components allowing for efficient code reuse and parallel development.
-
-Traditionally used for desktop graphical user interfaces (GUIs), this architecture has become popular for designing web applications and even mobile, desktop and other clients.\[3\] Popular programming languages like Java, C\#, Ruby, PHP and others have popular MVC frameworks that are currently being used in web application development straight out of the box.
-
-The model is the central component of the pattern. It expresses the application's behavior in terms of the problem domain, independent of the user interface. It directly manages the data, logic and rules of the application.
-
-A view can be any output representation of information, such as a chart or a diagram. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants.
-
-The third part, the controller, accepts input and converts it to commands for the model or view.
+> *Model–view–controller (MVC) is a software architectural pattern for implementing user interfaces on computers. It divides a given application into three interconnected parts. This is done to separate internal representations of information from the ways information is presented to, and accepted from, the user. The MVC design pattern decouples these major components allowing for efficient code reuse and parallel development.*
+>
+> *Traditionally used for desktop graphical user interfaces (GUIs), this architecture has become popular for designing web applications and even mobile, desktop and other clients.\[3\] Popular programming languages like Java, C\#, Ruby, PHP and others have popular MVC frameworks that are currently being used in web application development straight out of the box.*
+>
+> *The model is the central component of the pattern. It expresses the application's behavior in terms of the problem domain, independent of the user interface. It directly manages the data, logic and rules of the application.*
+>
+> *A view can be any output representation of information, such as a chart or a diagram. Multiple views of the same information are possible, such as a bar chart for management and a tabular view for accountants.*
+>
+> *The third part, the controller, accepts input and converts it to commands for the model or view.*
 
 I think we can assume that all active web developers have a good handle on the MVC paradigm. We understand that the model maintains the current working state of the application, while the view interacts with the user, fetching data from the model, accepting input from the user, and then pushing changes back to the model. The model and the view do not interact directly, they always communicate via the controller.
 
@@ -32,6 +32,10 @@ So, we have uniformity of development language across the Model and View environ
 
 As mentioned above, the standard web development interaction model is request-respond, otherwise known as client-server. But, that model is very constricting when you have basically a peer-to-peer working relationship between the Model on the server, and the View within the browser. Either party should be able to initiate an exchange of information.
 
-Ruby-hyperloop addresses this issue straight on by implementing a bi-directional flow of information between the two cooperating computing environments. Ruby-hyperloop is a complete re-think of what the MVC Controller should be and how it should be implemented.
+Ruby-hyperloop addresses this issue straight on by implementing a bi-directional flow of information between the two cooperating computing environments. **Ruby-hyperloop is a complete re-think of what the MVC Controller should be and how it should be implemented**.
 
-Talk about React component model, reactive-memory model, and how the Hyperloop “controller” uses these to tie the attributes of a Model directly into the contents of components displayed by the browser. &lt;&lt;Much more to do here.&gt;&gt;
+&lt;&lt;More to do...&gt;
+
+Talk about React component model, reactive-memory model, and how the Hyperloop “controller” uses these to tie the attributes of a Model directly into the contents of components displayed by the browser.
+
+&lt;&lt;Much more to do here.&gt;&gt;
